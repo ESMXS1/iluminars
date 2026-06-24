@@ -1,1 +1,2 @@
-print ("Hello MOISEX")
+print ("modificacion anterior")
+print("actualizacion de moises")
