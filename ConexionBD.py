@@ -1,7 +1,6 @@
 import mysql.connector
 from mysql.connector import Error
 
-
 class ConexionBD:
     """Administra la conexión a un servidor MySQL."""
 
@@ -25,11 +24,4 @@ class ConexionBD:
     def cerrar(self):
         if self.conexion and self.conexion.is_connected():
             self.conexion.close()
-
-
-# Uso en VS Code (main.py)
-db = ConexionBD("localhost", "root", "1234", "escuela_db")
-db.conectar()
-
-# Cuando termines de usar la conexión
-db.cerrar()
+            print("Conexion cerrada.")
